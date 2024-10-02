@@ -1,0 +1,97 @@
+/* General page layout */
+.main_content {
+    background-color: #f9fafb;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dashboard_header_title h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #374151;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  /* Card container */
+  .white_box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .white_box:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form styling */
+  .form-control {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
+    outline: none;
+  }
+  
+  /* Button styling */
+  .btn_1 {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .btn_1:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(59, 130, 246, 0.2);
+  }
+  
+  /* Modal header */
+  .modal-header {
+    background-color: #3b82f6;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .modal-title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .white_box {
+      padding: 20px;
+    }
+  
+    .form-control {
+      padding: 10px;
+    }
+  
+    .btn_1 {
+      padding: 10px 20px;
+    }
+  }
+  

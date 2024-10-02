@@ -1,0 +1,159 @@
+/* General page layout */
+body{
+    height: 225vh;
+}
+
+
+.main_content {
+    background-color: #f9fafb;
+    padding: 40px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsive grid layout */
+  .row {
+    display: grid;
+    justify-items:center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* gap: 30px; */
+    /* margin-top: 10%; */
+
+  }
+  
+  /* Individual product card */
+  .white_card {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 20%;
+    height: 410px;
+  }
+  
+  .white_card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: #d1d5db;
+  }
+  
+  /* Product image box */
+  .white_card img {
+    width: 70%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f3f4f6;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .white_card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Product information */
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+  }
+  
+  .white_card:hover .card-body h4 {
+    color: #2563eb;
+  }
+  
+  .card-body small {
+    font-size: 13px;
+    color: #9ca3af;
+    text-decoration: line-through;
+  }
+  
+  .card-body p {
+    margin: 8px 0;
+    font-size: 18px;
+    color: #374151;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .white_card:hover .card-body p {
+    color: #059669;
+  }
+  
+  /* Category badge */
+  .badge_btn_3 {
+    background-color: #3b82f6;
+    color: white;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  
+  .badge_btn_3::before {
+    content: '★';
+    margin-right: 5px;
+  }
+  
+  /* Button styling */
+  .d-grid {
+    display: flex;
+    gap: 12px;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+  
+  .btn_2 {
+    background: linear-gradient(135deg, #10b981, #16a34a);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    font-weight: 600;
+    font-size: 14px;
+    width: 120px;
+  }
+  
+  .btn_2:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+    transform: translateY(-3px);
+  }
+  
+  /* Edit button */
+  .btn_2:first-child {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  }
+  
+  .btn_2:first-child:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+  
+    .white_card {
+      max-width: 100%;
+    }
+  }
+  
